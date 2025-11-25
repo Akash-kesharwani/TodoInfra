@@ -1,6 +1,6 @@
 data "azurerm_key_vault" "kv" {
   name                = "todokey"
-  resource_group_name = "rg-ak"
+  resource_group_name = "rg-test"
 }
 
 data "azurerm_key_vault_secret" "username" {
