@@ -23,7 +23,7 @@ db = {
     read_scale     = true
     sku_name       = "S0"
     zone_redundant = true
-    server_name =  "serverak00001"
+    server_name =  "serverak02001"
     resource_group_name = "rg-ak1"
   }
 }
