@@ -64,7 +64,7 @@ jobs:
       
     - name: Terraform Apply
       id: apply
-      working-directory: environment/dev
+      working-directory: parent/dev
       run: terraform apply --auto-approve  
     
   
