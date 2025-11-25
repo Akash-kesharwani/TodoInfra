@@ -1,16 +1,16 @@
 rg = {
   rg1 = {
-    name     = "rg-ak"
-    location = "southindia"
+    name     = "rg-ak1"
+    location = "westus"
   }
 }
 
 server = {
   server1 = {
-    name                = "serverak00001"
-    resource_group_name = "rg-ak"
+    name                = "serverak02001"
+    resource_group_name = "rg-ak1"
     version             = "12.0"
-    location            = "southindia"
+    location            = "westus"
     minimum_tls_version  = "1.2"
   }
 }
@@ -24,15 +24,15 @@ db = {
     sku_name       = "S0"
     zone_redundant = true
     server_name =  "serverak00001"
-    resource_group_name = "rg-ak"
+    resource_group_name = "rg-ak1"
   }
 }
 
 acr = {
   acr1 = {
     name                = "acrak"
-    resource_group_name = "rg-ak"
-    location            = "southindia"
+    resource_group_name = "rg-ak1"
+    location            = "westus"
     sku                 = "Standard"
     admin_enabled       = false
 
@@ -42,8 +42,8 @@ acr = {
 aks = {
   aks1 = {
     name                = "aks-ak"
-    location            = "southindia"
-    resource_group_name = "rg-ak"
+    location            = "westus"
+    resource_group_name = "rg-ak1"
     dns_prefix          = "exampleaks1"
     default_node_pool = {
       name       = "default"
