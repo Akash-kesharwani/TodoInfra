@@ -6,6 +6,6 @@ resource "azurerm_mssql_server" "mssql-server" {
   location                     = each.value.location
   version                      = each.value.version                   
   administrator_login          = "serveradmin"
-  administrator_login_password = "ServerPassword"
+  administrator_login_password = "Pa$$w@rd@123"
   minimum_tls_version          = each.value.minimum_tls_version                                     #"1.2"
 }
