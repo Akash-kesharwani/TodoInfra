@@ -11,7 +11,7 @@ server = {
     resource_group_name = "rg-ak"
     version             = "12.0"
     location            = "westus"
-    minimum_tls_version  = "1.2"
+    # minimum_tls_version  = "1.2"
   }
 }
 db = {
@@ -20,9 +20,7 @@ db = {
     collation      = "SQL_Latin1_General_CP1_CI_AS"
     license_type   = "LicenseIncluded"
     max_size_gb    = 2
-    read_scale     = false
     sku_name       = "S0"
-    zone_redundant = false
     server_name =  "serverak020201"
     resource_group_name = "rg-ak"
   }
