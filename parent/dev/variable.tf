@@ -10,7 +10,6 @@ variable "server" {
       resource_group_name = string
       location = string
       version = string
-      minimum_tls_version  = string
 
     })) 
 }
@@ -20,9 +19,7 @@ variable "db" {
       collation = string
       license_type = string
       max_size_gb = number
-      read_scale = bool
       sku_name = string
-      zone_redundant = bool
       server_name =string
       enclave_type = optional(string, "VBS")
       resource_group_name = string
