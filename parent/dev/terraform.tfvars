@@ -11,7 +11,7 @@ server = {
     resource_group_name = "rg-ak"
     version             = "12.0"
     location            = "westus"
-    # minimum_tls_version  = "1.2"
+    minimum_tls_version  = "1.2"
   }
 }
 db = {

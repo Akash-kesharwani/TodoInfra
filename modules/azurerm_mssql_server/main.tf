@@ -1,11 +1,10 @@
-
-resource "azurerm_mssql_server" "mssql-server" {
-    for_each = var.server
+resource "azurerm_mssql_server" "server" {
+  for_each = var.server
   name                         = each.value.name
   resource_group_name          = each.value.resource_group_name
   location                     = each.value.location
-  version                      = each.value.version                   
-  administrator_login          = "akash123"
-  administrator_login_password = "Pa$$w@rd@123"
-  # minimum_tls_version          = each.value.minimum_tls_version                                     #"1.2"
+  version                      = each.value.version
+  administrator_login          = "Akash123"
+  administrator_login_password = "P@$$word@123"
+  minimum_tls_version          = each.value.minimum_tls_version
 }

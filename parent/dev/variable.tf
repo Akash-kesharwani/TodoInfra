@@ -10,6 +10,7 @@ variable "server" {
       resource_group_name = string
       location = string
       version = string
+      minimum_tls_version = string
 
     })) 
 }
